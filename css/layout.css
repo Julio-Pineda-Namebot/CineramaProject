@@ -1,0 +1,133 @@
+/* Header */
+.nav {
+    background-color: var(--color-bg-dark-80);
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+}
+
+.nav-link {
+    margin-right: 2em;
+    color: var(--color-bg-white);
+    padding-bottom: .2em;
+    font-size: .8rem;
+}
+
+.nav-link:hover {
+    color: var(--color-bg-white);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.nav-link.active {
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.navbar-toggler {
+    color: var(--color-bg-white);
+}
+
+.navbar-toggler:focus {
+    color: var(--color-bg-white);
+    box-shadow: none;
+}
+
+/* Busqueda */
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg-white-50);
+    color: var(--color-bg-white);
+    border-radius: var(--radius-input);
+    backdrop-filter: blur(6px);
+    margin-right: 2em;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    color: var(--color-bg-white);
+    font-size: .8em;
+}
+
+.search-input::placeholder {
+    color: var(--color-bg-white);
+    opacity: 1;
+}
+
+.search-input:focus {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    color: white;
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    color: var(--color-primary);
+    padding: .4em .4em;
+    margin-right: .5em;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-bg-dark-90);
+    padding: 2rem 0 1rem;
+    color: var(--color-bg-white);
+}
+
+.footer-link {
+    color: var(--color-bg-white);
+    text-decoration: none;
+    font-size: .9rem;
+    line-height: 2;
+    transition: color .2s;
+}
+
+.footer-link:hover {
+    color: var(--color-primary);
+}
+
+.footer-social-label {
+    font-size: .9rem;
+    white-space: nowrap;
+}
+
+.social-icon {
+    color: var(--color-bg-white);
+    border: 1.5px solid var(--color-bg-white);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .85rem;
+    text-decoration: none;
+    transition: color .2s, border-color .2s;
+}
+
+.social-icon:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.footer-divider {
+    border-color: var(--color-bg-gray-50);
+    margin: 1.5rem 0 1rem;
+}
+
+.footer-copy {
+    font-size: .85rem;
+    color: var(--color-bg-white-70);
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .social {
+        justify-content: center !important;
+    } 
+}
