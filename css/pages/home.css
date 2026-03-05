@@ -1,6 +1,7 @@
 .carrousel,
 .movies-select,
-.cinerama-experience {
+.cinerama-experience,
+.movies-card {
     margin-bottom: 3em;
 }
 
@@ -37,6 +38,7 @@
 }
 
 .cinerama-exp{
+    margin-top: 1em;
     height: 350px;
 }
 
@@ -52,4 +54,10 @@
     font-size: 1.2em;
     text-align: center;
     font-weight: 600;
+}
+
+@media (max-width: 768px){
+    .cinerama-exp{
+        height: 200px;
+    }
 }
