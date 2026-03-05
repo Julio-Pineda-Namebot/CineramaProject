@@ -63,23 +63,6 @@ CineramaProject/
 3. **Buscar películas**: Usa la barra de búsqueda en el navegador
 4. **Filtrar contenido**: En la cartelera, utiliza los selectores para filtrar por ciudad y género
 
-## 📱 Páginas Disponibles
-
-### Index.html - Cartelera Principal
-- Carrusel destacado con películas principales
-- Filtros por ciudad, género y sede
-- Información estructurada de películas disponibles
-
-### Places.html - Sedes
-- Listado de sedes disponibles
-- Información de ubicación
-- Detalles de cada sucursal
-
-### Contact.html - Contacto
-- Formulario de contacto
-- Información de atención al cliente
-- Redes sociales
-
 ## 📞 Contacto
 
 **Cinerama S.A.**
@@ -93,6 +76,6 @@ CineramaProject/
 
 ---
 
-**Versión**: 1.0  
+**Versión**: 2.0  
 **Última actualización**: Marzo 2026  
 **Estado**: En desarrollo
