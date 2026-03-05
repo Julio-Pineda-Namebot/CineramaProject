@@ -1,0 +1,55 @@
+.carrousel,
+.movies-select,
+.cinerama-experience {
+    margin-bottom: 3em;
+}
+
+.section-title {
+    font-weight: 700;
+}
+
+.form-select {
+    margin-bottom: .8em;
+    border-radius: .6em;
+    padding: 12px 0 12px 12px;
+    font-size: .9rem;
+    box-shadow: 0 4px 4px var(--color-bg-shadow-20);
+}
+
+.card-movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: var(--radius-gen);
+    border: none;
+    width: 200px;
+    height: 100%;
+}
+
+.card-img-top {
+    border-radius: var(--radius-gen);
+    box-shadow: 8px 8px 8px var(--color-bg-shadow-20);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cinerama-exp{
+    height: 350px;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card-title {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+}

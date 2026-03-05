@@ -1,0 +1,92 @@
+.movie-detail {
+    background-image:
+        linear-gradient(var(--color-bg-dark-80)),
+        url("/assets/img/movies/detail-movie/img.webp");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.movie-poster {
+    width: 100%;
+    max-width: 400px;
+}
+
+.movie-detail article {
+    padding-top: 5em;
+}
+
+.movie-description {
+    color: var(--color-bg-white);
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.btn-outline-movie,
+.btn-outline-trailer {
+    border-radius: var(--radius-btn-special);
+    padding: .6em 2em;
+    border: none;
+    background-color: var(--color-bg-gray-20);
+    color: var(--color-bg-white);
+    font-size: .87em;
+    margin-right: .9em;
+    margin-top: .4em;
+}
+
+.btn-outline-movie:hover,
+.btn-outline-trailer:hover {
+    background-color: var(--color-bg-gray-50);
+}
+
+.btn-outline-trailer {
+    padding: 1.2em 3em;
+}
+
+.btn-outline-trailer i {
+    font-size: 1rem;
+    margin-right: .5em;
+}
+
+.title-director,
+.title-cast {
+    color: var(--color-bg-white);
+}
+
+.row-cols-lg-7>* {
+    flex: 0 0 auto;
+    width: 14.2857%;
+}
+
+.card {
+    background: transparent;
+}
+
+.card-cast {
+    width: 150px;
+}
+
+.card-title-cast {
+    color: var(--color-bg-white);
+    text-align: center;
+    font-size: .9em;
+    font-weight: 600;
+}
+
+.btn-back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    border-radius: 50px;
+    padding: 8px 16px;
+}
+
+.video-trailer {
+    display: block;
+    background-color: var(--color-bg-dark);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
