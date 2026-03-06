@@ -29,12 +29,15 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <nav class="nav navbar navbar-expand-lg fixed-top">
+    <header class="fixed-top">
+        <nav class="nav navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="/index.html">
                     <img src="assets/icons/logo.png" alt="logo" width="160" height="50">
@@ -67,10 +70,88 @@
             </div>
         </nav>
     </header>
-    
+
     <!-- Main -->
     <main>
+        <section class="contact-section">
+            <div class="container">
+                <article class="row">
+                    <div class="col-12 text-left">
+                        <h1 class="contact-title">Contáctanos</h1>
+                        <h5>Atención de Consultas o Incidencias</h5>
+                        <p class="contact-description">
+                            Para asegurar la calidad y optimización de nuestro servicio,
+                            por favor llenar todos los campos que solicitamos.¡Gracias!
+                        </p>
+                    </div>
+                </article>
 
+                <article class="row">
+                    <div class="col-12">
+                        <form class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-4 mt-4">
+                                    <label class="label-contact">Nombres *</label>
+                                    <input type="text" class="form-control contact-input" placeholder="Ingresar Nombres"
+                                        required>
+                                </div>
+                                <div class="col-md-4 mt-4">
+                                    <label class="label-contact">Apellidos *</label>
+                                    <input type="text" class="form-control contact-input"
+                                        placeholder="Ingresar Apellidos" required>
+                                </div>
+                                <div class="col-md-4 mt-4">
+                                    <label class="label-contact">DNI *</label>
+                                    <input type="text" class="form-control contact-input" placeholder="Ingresar DNI"
+                                        required>
+                                </div>
+                                <div class="col-md-4 mt-4">
+                                    <label class="label-contact">Seleccione un cine *</label>
+                                    <select class="form-select select-contact" required>
+                                        <option>Seleccione un cine</option>
+                                        <option value="">Lima</option>
+                                        <option value="">Ica</option>
+                                        <option value="">Chimbote</option>
+                                        <option value="">Piura</option>
+                                        <option value="">Tarapoto</option>
+                                        <option value="">Cajamarca</option>
+                                        <option value="">Huacho</option>
+                                        <option value="">Moyobamba</option>
+                                        <option value="">Cusco</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 mt-4">
+                                    <label class="label-contact">Teléfono</label>
+                                    <input type="tel" class="form-control contact-input" placeholder="Ingresar Teléfono"
+                                        required>
+                                </div>
+                                <div class="col-md-4 mt-4">
+                                    <label class="label-contact">Correo Electrónico *</label>
+                                    <input type="email" class="form-control contact-input"
+                                        placeholder="Ingresar Correo Electrónico" required>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <label class="label-contact">Mensaje *</label>
+                                    <textarea class="form-control textarea-contact" rows="5" required minlength="10" maxlength="500"
+                                        placeholder="Por favor, proporciona tu consulta o comentario"></textarea>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-6 recaptcha">
+                                    <div class="g-recaptcha" data-sitekey="6LdhZ4EsAAAAAMDWEC0MSF0_A1__igTvVPeGSVbj">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-6 div-btn-contact">
+                                    <button class="btn btn-contact">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <a href="https://wa.link/z15ptd" target="_blank">
+            <i class="fa-brands fa-whatsapp icon-whastapp"></i>
+        </a>
     </main>
 
     <!-- Footer -->
