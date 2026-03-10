@@ -28,6 +28,7 @@
     border: none;
     width: 200px;
     height: 100%;
+    background: transparent;
 }
 
 .card-img-top {

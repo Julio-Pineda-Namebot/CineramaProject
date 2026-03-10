@@ -3,17 +3,12 @@
     background-size: cover;
     background-position: center left;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
+    padding-top: 6em;
 }
 
 .movie-poster {
     width: 100%;
     max-width: 400px;
-}
-
-.movie-detail article {
-    padding-top: 6em;
 }
 
 .movie-description {
@@ -54,15 +49,6 @@
 .title-director,
 .title-cast {
     color: var(--color-bg-white);
-}
-
-.row-cols-lg-7>* {
-    flex: 0 0 auto;
-    width: 14.2857%;
-}
-
-.card {
-    background: transparent;
 }
 
 .card-cast {
