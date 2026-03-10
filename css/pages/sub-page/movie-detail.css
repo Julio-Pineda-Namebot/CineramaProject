@@ -1,20 +1,14 @@
 .movie-detail {
-    background-image:
-        linear-gradient(var(--color-bg-dark-80)),
-        url("/assets/img/movies/detail-movie/img.webp");
     min-height: 100vh;
     background-size: cover;
     background-position: center left;
     background-repeat: no-repeat;
+    padding-top: 6em;
 }
 
 .movie-poster {
     width: 100%;
     max-width: 400px;
-}
-
-.movie-detail article {
-    padding-top: 5em;
 }
 
 .movie-description {
@@ -33,11 +27,14 @@
     font-size: .87em;
     margin-right: .9em;
     margin-top: .4em;
+    text-decoration: none;
+    text-align: center;
 }
 
 .btn-outline-movie:hover,
 .btn-outline-trailer:hover {
     background-color: var(--color-bg-gray-50);
+    color: var(--color-bg-white);
 }
 
 .btn-outline-trailer {
@@ -52,15 +49,6 @@
 .title-director,
 .title-cast {
     color: var(--color-bg-white);
-}
-
-.row-cols-lg-7>* {
-    flex: 0 0 auto;
-    width: 14.2857%;
-}
-
-.card {
-    background: transparent;
 }
 
 .card-cast {

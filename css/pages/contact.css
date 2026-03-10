@@ -25,7 +25,7 @@
 
 .label-contact {
     font-weight: 500;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .contact-input,
@@ -55,11 +55,12 @@
     color: var(--color-bg-white);
 }
 
-.recaptcha, .div-btn-contact{
+.recaptcha,
+.div-btn-contact {
     margin-bottom: 3em;
 }
 
-.div-btn-contact{
+.div-btn-contact {
     display: flex;
     justify-content: end;
 }
@@ -70,9 +71,9 @@
         justify-content: center;
         margin-bottom: .9em !important;
     }
-    
-    .div-btn-contact{
-        display: flex; 
+
+    .div-btn-contact {
+        display: flex;
         justify-content: center;
         margin-bottom: 3em;
     }

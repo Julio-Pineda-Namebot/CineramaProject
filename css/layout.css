@@ -5,6 +5,12 @@
     padding-bottom: .9rem;
 }
 
+.nav-movie {
+    background-color: transparent;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+}
+
 .nav-link {
     margin-right: 2em;
     color: var(--color-bg-white);
