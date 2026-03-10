@@ -34,7 +34,7 @@
 <body>
     <!-- Header -->
     <header class="fixed-top">
-        <nav class="nav navbar navbar-expand-lg">
+        <nav class="nav-movie navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="/index.html">
                     <img src="/assets/icons/logo.png" alt="logo" width="160" height="50">
@@ -70,42 +70,43 @@
 
     <!-- Main -->
     <main>
-        <section class="movie-detail">
+        <section id="movieDetail" class="movie-detail">
             <article class="container">
                 <div class="row">
                     <div class="col-12">
-                        <img src="/assets/img/movies/detail-movie/img.png" alt="Scream 7" class="movie-poster">
+                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773123275/img_5_tko3ir.png"
+                            alt="Hoppers" class="movie-poster">
                     </div>
                     <div class="col-12 col-lg-7">
                         <p class="movie-description">
-                            En "Scream 7", Sidney Prescott (interpretada por Neve Campbell) ha intentado dejar atrás los
-                            horrores de su pasado
-                            y ha construido una nueva vida en la tranquila ciudad de Pine Grove. Sin embargo, sus peores
-                            temores se hacen realidad
-                            cuando un nuevo asesino Ghostface emerge, poniendo en peligro a su hija, Tatum (Isabel May).
-                            Determinada a proteger a
-                            su familia, Sidney debe enfrentarse a los fantasmas de su pasado y detener el derramamiento
-                            de sangre de una vez por todas.
+                            Tras la Segunda Guerra Mundial, durante los históricos juicios de Nuremberg, el psiquiatra
+                            estadounidense Douglas Kelley tiene la tarea de evaluar la salud mental de los prisioneros
+                            nazis para determinar si son aptos para ser juzgados por crímenes de guerra.
+
+                            En medio de esta responsabilidad, Kelley se enfrenta a Hermann Göring, mano derecha de
+                            Hitler, en una intensa batalla de ingenio y manipulación. Mientras Göring intenta mantener
+                            su poder, Kelley debe navegar entre la verdad, la justicia y la psicología de uno de los
+                            líderes más peligrosos del Tercer Reich.
                         </p>
                     </div>
                     <div class="col-12">
-                        <button type="button" class="btn-outline-movie">2026</button>
-                        <button type="button" class="btn-outline-movie">114 min</button>
-                        <button type="button" class="btn-outline-movie">Horror</button>
-                        <button type="button" class="btn-outline-movie">Misterio</button>
+                        <button type="button" class="btn-outline-movie">2025</button>
+                        <button type="button" class="btn-outline-movie">148 minutos</button>
+                        <button type="button" class="btn-outline-movie">Biografía</button>
+                        <button type="button" class="btn-outline-movie">Drama</button>
+                        <button type="button" class="btn-outline-movie">Historia</button>
                     </div>
                     <div class="col-12 mt-2">
-                        <button type="button" class="btn-outline-trailer"
-                            onclick="window.location.href='/pages/movies/trailer/trailer-movie.html'">
+                        <a type="button" class="btn-outline-trailer" href="trailer-movie.html">
                             <i class="fa-solid fa-video"></i>
                             Trailer
-                        </button>
+                        </a>
                     </div>
                     <div class="col-12 mt-3">
                         <h3 class="title-director">Director</h3>
                     </div>
                     <div class="col-12">
-                        <button type="button" class="btn-outline-movie">Kevin Williamson</button>
+                        <button type="button" class="btn-outline-movie">James Vanderbilt</button>
                     </div>
                     <div class="col-12 mt-3">
                         <h3 class="title-cast">Elenco</h3>
@@ -115,64 +116,73 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="card card-cast">
-                                        <img src="/assets//img//movies/detail-movie/Neve-Campbell.jpg"
-                                            class="card-img-top" alt="Neve Campbell">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773123415/19609725_x91hrx.jpg"
+                                            class="card-img-top" alt="Russell Crowe">
                                         <div class="card-body">
-                                            <h5 class="card-title-cast">Neve Campbell</h5>
+                                            <h5 class="card-title-cast">Russell Crowe</h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card card-cast">
-                                        <img src="/assets//img//movies/detail-movie/Courteney-Cox.jpg"
-                                            class="card-img-top" alt="Courteney Cox">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773123405/376414_wh2i2w.jpg"
+                                            class="card-img-top" alt="Rami Malek">
                                         <div class="card-body">
-                                            <h5 class="card-title-cast">Courteney Cox</h5>
+                                            <h5 class="card-title-cast">Rami Malek</h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card card-cast">
-                                        <img src="/assets//img//movies/detail-movie/Jasmin-Savoy-Brown.jpg"
-                                            class="card-img-top" alt="Jasmin Savoy Brown">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773123418/19795467_m5o95y.jpg"
+                                            class="card-img-top" alt="Richard E. Grant">
                                         <div class="card-body">
-                                            <h5 class="card-title-cast">Jasmin Savoy</h5>
+                                            <h5 class="card-title-cast">Richard E. Grant</h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card card-cast">
-                                        <img src="/assets//img//movies/detail-movie/Mason-Gooding.jpg"
-                                            class="card-img-top" alt="Mason Gooding">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773123407/394306_qckiz4.jpg"
+                                            class="card-img-top" alt="Michael Shannon">
                                         <div class="card-body">
-                                            <h5 class="card-title-cast">Mason Gooding</h5>
+                                            <h5 class="card-title-cast">Michael Shannon</h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card card-cast">
-                                        <img src="/assets//img//movies/detail-movie/Celeste-Connor.jpg"
-                                            class="card-img-top" alt="Celeste O'Connor">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773123411/4165277_uhi7sh.jpg"
+                                            class="card-img-top" alt="Leo Woodall">
                                         <div class="card-body">
-                                            <h5 class="card-title-cast">Celeste O'Connor</h5>
+                                            <h5 class="card-title-cast">Leo Woodall</h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card card-cast">
-                                        <img src="/assets//img//movies/detail-movie/Joel-McHale.jpg"
-                                            class="card-img-top" alt="Joel McHale">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773123422/207417_jyicik.jpg"
+                                            class="card-img-top" alt="John Slattery">
                                         <div class="card-body">
-                                            <h5 class="card-title-cast">Joel McHale</h5>
+                                            <h5 class="card-title-cast">John Slattery</h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card card-cast">
-                                        <img src="/assets//img//movies/detail-movie/Anna-Camp.jpg" class="card-img-top"
-                                            alt="Anna Camp">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773123413/19503101_ldhja4.jpg"
+                                            class="card-img-top" alt="Colin Hanks">
                                         <div class="card-body">
-                                            <h5 class="card-title-cast">Anna Camp</h5>
+                                            <h5 class="card-title-cast">Colin Hanks</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773123420/097243_im7rnc.png"
+                                            class="card-img-top" alt="Mark O'Brien">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Mark O'Brien</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -183,6 +193,7 @@
         </section>
     </main>
 
+    <script src="/javascript/movie-detail.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper-cast", {

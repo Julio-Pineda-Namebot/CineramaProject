@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinerama - Scream 7</title>
+
+    <!-- Framework Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Carrousel - Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- Libreria de Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+    <!-- Icono para pestaña -->
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="nav-movie navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/assets/icons/logo.png" alt="logo" width="160" height="50">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <form class="search-form">
+                        <input class="form-control search-input" type="search" placeholder="Buscar...">
+                        <button class="search-btn" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Cartelera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/places.html">Sedes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contáctenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section id="movieDetail" class="movie-detail">
+            <article class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773115506/img_3_zawlq9.png"
+                            alt="The Monkey" class="movie-poster">
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <p class="movie-description">
+                            Basada en el relato homónimo de 1980 escrito por Stephen King, narra la historia de dos
+                            hermanos gemelos, Hal y Bill, que descubren en el desván de su casa un mono de juguete
+                            maldito que causa la muerte de los habitantes de su comunidad. Los hermanos tiran el mono a
+                            la basura, pero empieza a matar de nuevo. Dirigida por Osgood Perkins (Hansel y Gretel), y
+                            está protagonizada por Theo James, Elijah Wood y Tatiana Maslany, entre otros.
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn-outline-movie">2025</button>
+                        <button type="button" class="btn-outline-movie">98 minutos</button>
+                        <button type="button" class="btn-outline-movie">Horror</button>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <a type="button" class="btn-outline-trailer" href="trailer-movie.html">
+                            <i class="fa-solid fa-video"></i>
+                            Trailer
+                        </a>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <h3 class="title-director">Director</h3>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn-outline-movie">Osgood Perkins</button>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <h3 class="title-cast">Elenco</h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="swiper mySwiper-cast">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773115707/Theo_James_dmcrdn.jpg"
+                                            class="card-img-top" alt="Theo James">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Theo James</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773115720/Elijah_Wood_zkfqc5.jpg"
+                                            class="card-img-top" alt="Elijah Wood">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Elijah Wood</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773115718/Tatiana_Maslany_e27uao.jpg"
+                                            class="card-img-top" alt="Tatiana Maslany">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Tatiana Maslany</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773115723/Christian_Convery_cgasjg.jpg"
+                                            class="card-img-top" alt="Christian Convery">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Christian Convery</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773115721/Colin_O_Brien_eo4lo0.jpg"
+                                            class="card-img-top" alt="Colin O'Brien">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Colin O'Brien</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773115706/Rohan_Campbell_wfaz31.jpg"
+                                            class="card-img-top" alt="Rohan Campbell">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Rohan Campbell</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="/javascript/movie-detail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper-cast", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 6,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

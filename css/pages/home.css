@@ -37,7 +37,7 @@
     cursor: pointer;
 }
 
-.cinerama-exp{
+.cinerama-exp {
     margin-top: 1em;
     height: 350px;
 }
@@ -56,8 +56,8 @@
     font-weight: 600;
 }
 
-@media (max-width: 768px){
-    .cinerama-exp{
+@media (max-width: 768px) {
+    .cinerama-exp {
         height: 200px;
     }
 }
