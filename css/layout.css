@@ -130,6 +130,10 @@
 }
 
 @media (max-width: 768px) {
+    .nav-movie {
+        background-color: var(--color-bg-dark-80);
+    }
+    
     .footer {
         text-align: center;
     }
