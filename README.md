@@ -2,7 +2,7 @@
 
 Bienvenido a **Cinerama**, una plataforma digital moderna para la visualización de carteleras de cine, sedes de ubicación y gestión de contactos. Cinerama es tu aliado perfecto para descubrir las películas en cartelera y encontrar la sede más cercana.
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 
 Cinerama es un sitio web responsivo diseñado para una central de cine, permitiendo a los usuarios:
 - Explorar la cartelera actual de películas
@@ -10,7 +10,7 @@ Cinerama es un sitio web responsivo diseñado para una central de cine, permitie
 - Consultar las diferentes sedes disponibles
 - Ponerse en contacto directamente con la empresa
 
-## 🎯 Características Principales
+## Características Principales
 
 - **Cartelera Interactiva**: Visualiza las películas en cartelera con un carrusel dinámico impulsado por Swiper
 - **Filtros Avanzados**: Filtra películas por ciudad, género y ubicación de la sede
@@ -53,7 +53,7 @@ CineramaProject/
         └── contact.css  # Estilos de la página de contacto
 ```
 
-## 🚀 Cómo Usar
+## Cómo Usar
 
 1. **Abrir el proyecto**: Abre cualquiera de los archivos HTML en tu navegador web
 2. **Navegar por las páginas**: Usa el menú de navegación para acceder a:
@@ -63,14 +63,14 @@ CineramaProject/
 3. **Buscar películas**: Usa la barra de búsqueda en el navegador
 4. **Filtrar contenido**: En la cartelera, utiliza los selectores para filtrar por ciudad y género
 
-## 📞 Contacto
+## Contacto
 
 **Cinerama S.A.**
 - RUC: 20494191637
-- Website: www.cinerama.pe
+- Website: cinerama-project.vercel.app
 - Síguenos en redes sociales: Facebook, Instagram, TikTok, X (Twitter), Threads
 
-## 📅 Información Legal
+## Información Legal
 
 © 2026 Cinerama S.A. - Todos los derechos Reservados
 
