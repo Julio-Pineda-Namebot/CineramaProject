@@ -1,14 +1,13 @@
 /* Header */
-.nav {
-    background-color: var(--color-bg-dark-80);
+.nav, .nav-movie {
+    background-color: var(--color-bg-dark-70);
+    backdrop-filter: blur(20px);
     padding-top: .9rem;
     padding-bottom: .9rem;
 }
 
 .nav-movie {
     background-color: transparent;
-    padding-top: .9rem;
-    padding-bottom: .9rem;
 }
 
 .nav-link {
@@ -129,11 +128,7 @@
     line-height: 1.8;
 }
 
-@media (max-width: 768px) {
-    .nav-movie {
-        background-color: var(--color-bg-dark-80);
-    }
-    
+@media (max-width: 768px) {   
     .footer {
         text-align: center;
     }
