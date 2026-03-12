@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinerama - Zootopia 2</title>
+
+    <!-- Framework Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Carrousel - Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- Libreria de Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+
+    <!-- Icono para pestaña -->
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="nav-movie navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/assets/icons/logo.png" alt="logo" width="160" height="50">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <form class="search-form">
+                        <input class="form-control search-input" type="search" placeholder="Buscar...">
+                        <button class="search-btn" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Cartelera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/places.html">Sedes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contáctenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section id="movieDetail" class="movie-detail">
+            <article class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773293776/img_12_stiyaj.png"
+                            alt="Zootopia 2" class="movie-poster">
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <p class="movie-description">
+                            Zootopia 2 es una cinta animada de aventura, secuela del éxito de 2016, que sigue la
+                            historia de la valiente coneja policía Judy Hopps, quien, con la ayuda de su amigo, el zorro
+                            Nick Wilde, deberá resolver un nuevo caso, el más peligroso y complejo de su vida y carrera.
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn-outline-movie">2025</button>
+                        <button type="button" class="btn-outline-movie">108 minutos</button>
+                        <button type="button" class="btn-outline-movie">Animación</button>
+                        <button type="button" class="btn-outline-movie">Acción</button>
+                        <button type="button" class="btn-outline-movie">Aventura</button>
+                        <button type="button" class="btn-outline-movie">Comedia</button>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <a type="button" class="btn-outline-trailer" href="trailer-movie.html">
+                            <i class="fa-solid fa-video"></i>
+                            Trailer
+                        </a>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <h3 class="title-director">Director</h3>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn-outline-movie">Jared Bush y Byron Howard</button>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <h3 class="title-cast">Elenco</h3>
+                    </div>
+                    <div class="col-12">
+                        <div class="swiper mySwiper-cast">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773300525/550120_quax5z.jpg"
+                                            class="card-img-top" alt="Ginnifer Goodwin">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Ginnifer Goodwin (Judy Hopps)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773300529/110683_daasfh.jpg"
+                                            class="card-img-top" alt="Jason Bateman">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Jason Bateman (Nick Wilde)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773300523/20172639_fpgnlq.jpg"
+                                            class="card-img-top" alt="Ke Huy Quan">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Ke Huy Quan (Gary De'Snake)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773300540/19601336_coegiu.jpg"
+                                            class="card-img-top" alt="Idris Elba">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Idris Elba (Chief Bogo)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773300532/0419789_a2kf6z.jpg"
+                                            class="card-img-top" alt="Fortune Feimster">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Fortune Feimster (Nibbles Maplestick)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773300527/077717_oiu3ci.jpg"
+                                            class="card-img-top" alt="Andy Samberg">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Andy Samberg (Pawbert Lynxley)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773300534/1825935_rugids.jpg"
+                                            class="card-img-top" alt="Danny Trejo">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Danny Trejo (Jesús)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card-cast">
+                                        <img src="https://res.cloudinary.com/daioibryi/image/upload/v1773300537/2465364_b23f7j.jpg"
+                                            class="card-img-top" alt="Jean Reno">
+                                        <div class="card-body">
+                                            <h5 class="card-title-cast">Jean Reno (Officiers Chèvre & Bûcheron)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="/javascript/movie-detail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper-cast", {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 6,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
