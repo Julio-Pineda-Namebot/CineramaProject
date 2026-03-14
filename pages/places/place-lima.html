@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinerama - Cartelera Lima</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="nav navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="../../assets/icons/logo.png" alt="logo" width="160" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <form class="search-form">
+                        <input class="form-control search-input" type="search" placeholder="Buscar...">
+                        <button class="search-btn" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Cartelera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/places.html">Sedes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contáctenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cartelera-section">
+            <div class="container">
+
+                <!-- Barra superior: volver + nombre sede -->
+                <div class="cartelera-topbar">
+                    <span class="cartelera-sede-name">Cinerama Cajamarca</span>
+                </div>
+
+                <!-- Título -->
+                <h2 class="cartelera-title">CARTELERA - HORARIOS</h2>
+
+                <!-- Lista de películas -->
+                <div class="pelicula-list">
+
+                    <!-- Película 1 -->
+                    <article class="pelicula-item">
+                        <div class="pelicula-poster-wrapper">
+                            <a href="/pages/movies/Scream7/movie-detail.html?id=Scream7">
+                                <img src="../../assets/img/movies/card/scream7.jpg" alt="Scream 7" class="pelicula-poster">
+                            </a>
+                        </div>
+                        <div class="pelicula-info">
+                            <h3 class="pelicula-nombre">SCREAM 7</h3>
+                            <p class="pelicula-meta">Terror | 1hrs 56min | +14</p>
+
+                            <div class="pelicula-bloque">
+                                <span class="pelicula-label">IDIOMA</span>
+                                <div class="pelicula-tags">
+                                    <span class="tag">SUBTITULADA</span>
+                                    <span class="tag">DOBLADA</span>
+                                </div>
+                            </div>
+
+                            <div class="pelicula-bloque">
+                                <span class="pelicula-label">HORARIO</span>
+                                <div class="pelicula-tags">
+                                    <span class="tag">15:00</span>
+                                    <span class="tag">17:50</span>
+                                    <span class="tag">20:00</span>
+                                    <span class="tag">21:50</span>
+                                </div>
+                            </div>
+
+                            <div class="pelicula-bloque">
+                                <span class="pelicula-label">SALAS</span>
+                                <div class="pelicula-tags">
+                                    <span class="tag">N° 1</span>
+                                    <span class="tag">N° 2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <hr class="pelicula-divider">
+
+                    <!-- Película 2 -->
+                    <article class="pelicula-item">
+                        <div class="pelicula-poster-wrapper">
+                            <a href="/pages/movies/FindelMundo/movie-detail.html?id=FinDelMundo">
+                                <img src="../../assets/img/movies/card/fin-del-mundo.jpg" alt="El día del fin del mundo" class="pelicula-poster">
+                            </a>
+                        </div>
+                        <div class="pelicula-info">
+                            <h3 class="pelicula-nombre">El día del fin del mundo</h3>
+                            <p class="pelicula-meta">Acción | 1hrs 48min | APT</p>
+
+                            <div class="pelicula-bloque">
+                                <span class="pelicula-label">IDIOMA</span>
+                                <div class="pelicula-tags">
+                                    <span class="tag">SUBTITULADA</span>
+                                    <span class="tag">DOBLADA</span>
+                                </div>
+                            </div>
+
+                            <div class="pelicula-bloque">
+                                <span class="pelicula-label">HORARIO</span>
+                                <div class="pelicula-tags">
+                                    <span class="tag">15:00</span>
+                                    <span class="tag">17:50</span>
+                                    <span class="tag">20:00</span>
+                                </div>
+                            </div>
+
+                            <div class="pelicula-bloque">
+                                <span class="pelicula-label">SALAS</span>
+                                <div class="pelicula-tags">
+                                    <span class="tag">N° 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <hr class="pelicula-divider">
+
+                    <article class="pelicula-item">
+                        <div class="pelicula-poster-wrapper">
+                            <a href="/pages/movies/SonidoMuerte/movie-detail.html?id=SonidoMuerte">
+                                <img src="../../assets/img/movies/card/sonido-muerte.jpg" alt="El sonido de la muerte" class="pelicula-poster">
+                            </a>
+                        </div>
+                        <div class="pelicula-info">
+                            <h3 class="pelicula-nombre">El sonido de la muerte</h3>
+                            <p class="pelicula-meta">Terror | 1hrs 48min | +14</p>
+
+                            <div class="pelicula-bloque">
+                                <span class="pelicula-label">IDIOMA</span>
+                                <div class="pelicula-tags">
+                                    <span class="tag">SUBTITULADA</span>
+                                    <span class="tag">DOBLADA</span>
+                                </div>
+                            </div>
+
+                            <div class="pelicula-bloque">
+                                <span class="pelicula-label">HORARIO</span>
+                                <div class="pelicula-tags">
+                                    <span class="tag">15:00</span>
+                                    <span class="tag">17:50</span>
+                                    <span class="tag">20:00</span>
+                                </div>
+                            </div>
+
+                            <div class="pelicula-bloque">
+                                <span class="pelicula-label">SALAS</span>
+                                <div class="pelicula-tags">
+                                    <span class="tag">N° 3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (igual al de places.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <img src="../../assets/icons/logo.png" alt="logo" width="160" height="50">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="social d-flex align-items-center justify-content-md-end gap-3">
+                        <span class="footer-social-label">Síguenos en</span>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-threads"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copy mb-0">Cinerama S.A. | RUC 20494191637</p>
+                    <p class="footer-copy mb-0">© Todos los derechos Reservados 2026</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

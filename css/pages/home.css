@@ -9,12 +9,20 @@
     font-weight: 700;
 }
 
-.form-select {
-    margin-bottom: .8em;
-    border-radius: .6em;
-    padding: 12px 0 12px 12px;
-    font-size: .9rem;
-    box-shadow: 0 4px 4px var(--color-bg-shadow-20);
+.page-filter {
+    max-width: 220px;
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--color-primary);
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}   
+
+.page-filter:focus {
+    border-color: var(--color-primary);   
+    box-shadow: 0 0 0 0px var(--color-primary);
+    outline: none;
 }
 
 .card-movie {

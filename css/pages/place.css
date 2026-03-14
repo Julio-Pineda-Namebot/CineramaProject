@@ -1,0 +1,335 @@
+
+/* SEDES — Sección principal */
+
+.sedes-section {
+    padding: 6rem 0 4rem;     
+}
+
+.sedes-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sedes-title {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);              
+    letter-spacing: 0.05em;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.sedes-filter {
+    max-width: 220px;
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--color-primary);
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.sedes-filter:focus {
+    border-color: var(--color-primary);   
+    box-shadow: 0 0 0 0px var(--color-primary);
+    outline: none;
+}
+
+/*  SEDE CARD */
+
+.sede-card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-bg-gray);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sede-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px var(--color-bg-shadow-20);
+}
+
+/* --- Imagen --- */
+.sede-card-img-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 7;       
+    overflow: hidden;
+}
+
+.sede-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.sede-card:hover .sede-card-img {
+    transform: scale(1.05);    
+}
+
+/* --- Cuerpo --- */
+.sede-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    flex: 1;                     
+}
+
+.sede-card-info {
+    flex: 1;
+    min-width: 0;               
+}
+
+.sede-card-name {
+    font-family: 'Poppins';
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-bg-dark-80);
+    margin: 0 0 0.25rem;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sede-card-address {
+    font-family: 'Nunito';
+    font-size: 0.8rem;
+    color: var(--color-bg-gray-60);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.sede-card-address i {
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* --- Boton Ver Cartelegra --- */
+.sede-card-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+    font-family: 'Poppins';
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 2rem;         
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.sede-card-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);;
+    transform: scale(1.04);
+}
+
+.sede-card-btn:active {
+    transform: scale(0.97);
+}
+
+
+/*  CARTELERA — Sección principal */
+
+.cartelera-section {
+    padding: 6rem 0 4rem;
+}
+
+.cartelera-topbar {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.cartelera-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    text-decoration: none;
+    border: 1.5px solid var(--color-primary);
+    padding: 0.35rem 0.9rem;
+    border-radius: 2rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cartelera-back:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.cartelera-back i {
+    font-size: 0.8rem;
+}
+
+.cartelera-sede-name {
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.cartelera-title {
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: 0.04em;
+    margin-bottom: 2rem;
+}
+
+/*  LISTA DE PELÍCULAS */
+
+.pelicula-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.pelicula-divider {
+    border: none;
+    border-top: 1px solid var(--color-bg-gray);
+    margin: 2rem 0;
+}
+
+.pelicula-item {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.pelicula-poster-wrapper {
+    flex-shrink: 0;
+    width: 210px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.pelicula-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pelicula-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.pelicula-nombre {
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-bg-dark-90);
+    margin: 0 0 0.25rem;
+    letter-spacing: 0.02em;
+}
+
+.pelicula-meta {
+    font-family: 'Nunito';
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+.pelicula-bloque {
+    margin-bottom: 1rem;
+}
+
+.pelicula-label {
+    display: block;
+    font-family: 'Poppins';
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-bg-dark-90);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+}
+
+.pelicula-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--color-bg-dark-90);
+    border: 1.5px solid var(--color-bg-dark-90);
+    border-radius: 2rem;
+    padding: 0.3rem 0.9rem;
+    letter-spacing: 0.03em;
+    cursor: default;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.tag:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-bg-white);
+}
+
+/*  RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .sedes-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sedes-filter {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sede-card-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sede-card-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pelicula-item {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .pelicula-poster-wrapper {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .cartelera-topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+    }
+}
