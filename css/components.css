@@ -1,11 +1,4 @@
 /* Slider */
-.swiper-slide {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .slider-link {
     display: block;
     width: 100%;
