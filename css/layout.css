@@ -128,7 +128,13 @@
     line-height: 1.8;
 }
 
-@media (max-width: 768px) {   
+@media (max-width: 992px) {
+    .nav-link {
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
     .footer {
         text-align: center;
     }
