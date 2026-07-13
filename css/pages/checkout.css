@@ -1,0 +1,585 @@
+/*
+ * Estilos del flujo de compra (checkout).
+ * Reutiliza únicamente los tokens de :root definidos en base.css.
+ * No introduce colores, tipografías ni radios nuevos.
+ */
+
+/* Botón "Comprar entradas" del detalle de película.
+   Replica las métricas de .btn-outline-trailer pero en color primario. */
+.btn-buy-ticket {
+    border-radius: var(--radius-btn-special);
+    padding: 1.2em 3em;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+    font-size: .87em;
+    margin-right: .9em;
+    margin-top: .4em;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color .2s;
+}
+
+.btn-buy-ticket:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-bg-white);
+}
+
+.btn-buy-ticket i {
+    font-size: 1rem;
+    margin-right: .5em;
+}
+
+/* Contenedor general: deja espacio bajo el header fijo. */
+.ck-page {
+    padding-top: 6em;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+.ck-title {
+    font-weight: 700;
+}
+
+.ck-subtitle {
+    color: var(--color-bg-dark-70);
+    font-size: .95rem;
+}
+
+.ck-muted {
+    color: var(--color-bg-dark-50);
+    font-size: .85rem;
+}
+
+/* ---------- Indicador de pasos ---------- */
+.ck-stepper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .3em;
+    margin: 1em 0 2em;
+}
+
+.ck-step {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    opacity: .5;
+}
+
+.ck-step-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    font-weight: 600;
+    border: 1.5px solid var(--color-bg-gray);
+    color: var(--color-bg-dark-70);
+    background: var(--color-bg-white);
+}
+
+.ck-step-label {
+    font-size: .85rem;
+}
+
+.ck-step-active,
+.ck-step-done {
+    opacity: 1;
+}
+
+.ck-step-active .ck-step-dot {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-bg-white);
+}
+
+.ck-step-done .ck-step-dot {
+    background: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    color: var(--color-bg-white);
+}
+
+.ck-step-sep {
+    flex: 1 1 12px;
+    min-width: 12px;
+    height: 1.5px;
+    background: var(--color-bg-gray);
+}
+
+/* ---------- Tarjeta / paneles ---------- */
+.ck-card {
+    border: 1.5px solid var(--color-bg-gray);
+    border-radius: var(--radius-gen);
+    background: var(--color-bg-white);
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.ck-card-head {
+    font-weight: 600;
+    margin-bottom: .8em;
+}
+
+/* ---------- Selección de función ---------- */
+.ck-group {
+    border: 1.5px solid var(--color-bg-gray);
+    border-radius: var(--radius-gen);
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.ck-group-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: .2em;
+}
+
+.ck-group-sub {
+    color: var(--color-bg-dark-50);
+    font-size: .85rem;
+    margin-bottom: .8em;
+}
+
+.ck-format-block {
+    padding: .8em 0;
+    border-top: 1px solid var(--color-bg-gray-50);
+}
+
+.ck-format-name {
+    font-weight: 600;
+    font-size: .9rem;
+    margin-bottom: .6em;
+}
+
+/* Botón de horario (basado en el patrón .btn-outline-movie existente). */
+.ck-time {
+    border-radius: var(--radius-btn-special);
+    padding: .55em 1.6em;
+    border: 1.5px solid var(--color-primary);
+    background: var(--color-bg-white);
+    color: var(--color-primary);
+    font-size: .9rem;
+    margin: 0 .6em .6em 0;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+}
+
+.ck-time:hover {
+    background: var(--color-primary);
+    color: var(--color-bg-white);
+}
+
+/* Chips de fecha */
+.ck-dates {
+    display: flex;
+    gap: .6em;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+.ck-date {
+    border-radius: var(--radius-btn);
+    border: 1.5px solid var(--color-bg-gray);
+    background: var(--color-bg-white);
+    color: var(--color-bg-dark);
+    padding: .5em 1em;
+    font-size: .85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: background .2s, color .2s, border-color .2s;
+}
+
+.ck-date:hover {
+    border-color: var(--color-primary);
+}
+
+.ck-date.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-bg-white);
+}
+
+/* ---------- Mapa de sala ---------- */
+.ck-screen {
+    background: var(--color-bg-gray);
+    color: var(--color-bg-dark-70);
+    text-align: center;
+    font-size: .8rem;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    padding: .5em;
+    border-radius: var(--radius-btn) var(--radius-btn) 0 0;
+    max-width: 520px;
+    margin: 0 auto 2em;
+    box-shadow: 0 12px 20px -12px var(--color-bg-shadow-20);
+}
+
+.ck-seatmap {
+    display: inline-block;
+    min-width: min-content;
+}
+
+.ck-seatmap-scroll {
+    overflow-x: auto;
+    text-align: center;
+    padding-bottom: .5em;
+}
+
+.ck-seat-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35em;
+    margin-bottom: .35em;
+}
+
+.ck-row-label {
+    width: 1.5em;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--color-bg-dark-70);
+}
+
+.ck-seat {
+    width: 26px;
+    height: 26px;
+    border-radius: 6px 6px 3px 3px;
+    border: 1.5px solid var(--color-bg-gray);
+    background: var(--color-bg-white);
+    font-size: .6rem;
+    color: var(--color-bg-dark-50);
+    cursor: pointer;
+    padding: 0;
+    transition: transform .1s, background .2s, color .2s;
+}
+
+.ck-seat-gap {
+    width: 18px;
+}
+
+.ck-seat.is-available:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.ck-seat.is-selected {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-bg-white);
+}
+
+.ck-seat.is-locked {
+    background: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    color: var(--color-bg-white);
+    cursor: not-allowed;
+}
+
+.ck-seat.is-sold {
+    background: var(--color-bg-dark-50);
+    border-color: var(--color-bg-dark-50);
+    color: var(--color-bg-white);
+    cursor: not-allowed;
+}
+
+/* Leyenda de estados */
+.ck-legend {
+    display: flex;
+    gap: 1.2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5em;
+    font-size: .8rem;
+}
+
+.ck-legend-item {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.ck-legend-box {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1.5px solid var(--color-bg-gray);
+    display: inline-block;
+}
+
+.ck-legend-box.is-selected { background: var(--color-primary); border-color: var(--color-primary); }
+.ck-legend-box.is-locked   { background: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+.ck-legend-box.is-sold     { background: var(--color-bg-dark-50); border-color: var(--color-bg-dark-50); }
+
+/* ---------- Panel resumen (lateral) ---------- */
+.ck-summary {
+    position: sticky;
+    top: 6.5em;
+}
+
+.ck-summary-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    font-size: .9rem;
+    padding: .35em 0;
+}
+
+.ck-summary-row .ck-key {
+    color: var(--color-bg-dark-50);
+}
+
+.ck-summary-total {
+    border-top: 1px solid var(--color-bg-gray-50);
+    margin-top: .6em;
+    padding-top: .8em;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.ck-seat-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4em;
+    margin: .3em 0;
+}
+
+.ck-seat-tag {
+    background: var(--color-primary);
+    color: var(--color-bg-white);
+    border-radius: var(--radius-btn);
+    padding: .1em .7em;
+    font-size: .8rem;
+}
+
+/* ---------- Contador de reserva ---------- */
+.ck-timer {
+    display: inline-flex;
+    align-items: center;
+    gap: .5em;
+    background: var(--color-bg-gray-20);
+    border: 1.5px solid var(--color-bg-gray);
+    border-radius: var(--radius-btn);
+    padding: .4em 1em;
+    font-size: .9rem;
+}
+
+.ck-timer strong {
+    color: var(--color-primary);
+    font-variant-numeric: tabular-nums;
+}
+
+.ck-timer.is-danger {
+    border-color: var(--color-primary);
+}
+
+/* ---------- Botones de acción (basados en .btn-contact existente) ---------- */
+.ck-btn {
+    border-radius: var(--radius-btn);
+    padding: .7em 2.2em;
+    border: none;
+    font-size: .95rem;
+    cursor: pointer;
+    background: var(--color-primary);
+    color: var(--color-bg-white);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background .2s;
+}
+
+.ck-btn:hover {
+    background: var(--color-primary-dark);
+    color: var(--color-bg-white);
+}
+
+.ck-btn:disabled,
+.ck-btn.is-disabled {
+    background: var(--color-bg-gray);
+    color: var(--color-bg-white);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.ck-btn-outline {
+    background: var(--color-bg-white);
+    border: 1.5px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.ck-btn-outline:hover {
+    background: var(--color-bg-gray-20);
+    color: var(--color-primary);
+}
+
+/* ---------- Formularios (auth / pago) ---------- */
+.ck-label {
+    font-size: .85rem;
+    font-weight: 500;
+    margin-bottom: .3em;
+    display: block;
+}
+
+.ck-input {
+    border-radius: var(--radius-input);
+    border: 1.5px solid var(--color-bg-gray);
+    font-size: .9rem;
+}
+
+.ck-input:focus {
+    border-color: var(--color-primary);
+    box-shadow: none;
+}
+
+.ck-auth-card {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.ck-tabs {
+    display: flex;
+    gap: .5em;
+    margin-bottom: 1.5em;
+}
+
+.ck-tab {
+    flex: 1;
+    text-align: center;
+    padding: .6em;
+    border: 1.5px solid var(--color-bg-gray);
+    border-radius: var(--radius-btn);
+    background: var(--color-bg-white);
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.ck-tab.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-bg-white);
+}
+
+/* ---------- Pago: estados ---------- */
+.ck-pay-status {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.ck-pay-icon {
+    font-size: 3rem;
+    margin-bottom: .5em;
+}
+
+.ck-pay-icon.is-processing { color: var(--color-primary); }
+.ck-pay-icon.is-success    { color: var(--color-whatsapp); }
+.ck-pay-icon.is-failed     { color: var(--color-primary-dark); }
+
+.ck-spinner {
+    width: 3rem;
+    height: 3rem;
+    border: .35em solid var(--color-bg-gray);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    margin: 0 auto 1em;
+    animation: ck-spin 1s linear infinite;
+}
+
+@keyframes ck-spin {
+    to { transform: rotate(360deg); }
+}
+
+.ck-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--color-bg-dark-70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1080;
+    padding: 1em;
+}
+
+.ck-overlay-box {
+    background: var(--color-bg-white);
+    border-radius: var(--radius-gen);
+    padding: 2.5em 2em;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ---------- Ticket ---------- */
+.ck-ticket {
+    border: 1.5px solid var(--color-bg-gray);
+    border-radius: var(--radius-gen);
+    overflow: hidden;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.ck-ticket-head {
+    background: var(--color-bg-dark-90);
+    color: var(--color-bg-white);
+    padding: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ck-ticket-body {
+    padding: 1.4em;
+    display: flex;
+    gap: 1.4em;
+    flex-wrap: wrap;
+}
+
+.ck-ticket-data {
+    flex: 1 1 220px;
+}
+
+.ck-ticket-qr {
+    text-align: center;
+}
+
+.ck-ticket-qr canvas,
+.ck-ticket-qr img {
+    border: 1px solid var(--color-bg-gray);
+    border-radius: var(--radius-btn);
+    padding: 6px;
+    background: var(--color-bg-white);
+}
+
+.ck-ticket-code {
+    font-weight: 700;
+    letter-spacing: .05em;
+}
+
+.ck-dl-row {
+    display: flex;
+    gap: .8em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+/* Historial de compras */
+.ck-history-item {
+    border: 1.5px solid var(--color-bg-gray);
+    border-radius: var(--radius-gen);
+    padding: 1em 1.2em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .ck-summary { position: static; }
+    .ck-step-label { display: none; }
+}
