@@ -463,6 +463,200 @@
     color: var(--color-bg-white);
 }
 
+/* ---------- Pago: selección de método ---------- */
+.ck-methods {
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+    margin-bottom: 1.4em;
+}
+
+.ck-method {
+    display: flex;
+    align-items: center;
+    gap: .8em;
+    border: 1.5px solid var(--color-bg-gray);
+    border-radius: var(--radius-gen);
+    padding: .9em 1.1em;
+    cursor: pointer;
+    transition: border-color .2s, background .2s;
+}
+
+.ck-method:hover {
+    border-color: var(--color-primary);
+}
+
+.ck-method.is-active {
+    border-color: var(--color-primary);
+    background: var(--color-bg-gray-20);
+}
+
+.ck-method-radio {
+    accent-color: var(--color-primary);
+    width: 1.1em;
+    height: 1.1em;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.ck-method-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8em;
+    flex-wrap: wrap;
+}
+
+.ck-method-name {
+    font-size: .92rem;
+    font-weight: 500;
+}
+
+.ck-method-name i {
+    margin-right: .3em;
+    color: var(--color-bg-dark-70);
+}
+
+/* Fila de marcas de tarjeta aceptadas */
+.ck-brands {
+    display: inline-flex;
+    gap: .35em;
+    align-items: center;
+    font-size: 1.9rem;
+    line-height: 1;
+}
+
+.ck-brands i {
+    color: var(--color-bg-dark-70);
+    opacity: .4;
+    transition: opacity .2s, transform .2s;
+}
+
+.ck-brands i.is-active {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* Colores de marca (solo cuando está activa) */
+.fa-cc-visa.is-active { color: #1a1f71; }
+.fa-cc-mastercard.is-active { color: #eb001b; }
+.fa-cc-amex.is-active { color: #2e77bc; }
+.fa-cc-diners-club.is-active { color: #0079be; }
+
+/* Input de número de tarjeta con icono de marca a la derecha */
+.ck-card-input {
+    position: relative;
+}
+
+.ck-card-input .ck-input {
+    padding-right: 2.9em;
+}
+
+.ck-card-brand {
+    position: absolute;
+    right: .7em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.7rem;
+    line-height: 1;
+    color: var(--color-bg-dark-70);
+    opacity: 0;
+    transition: opacity .2s;
+    pointer-events: none;
+}
+
+.ck-card-brand.show { opacity: 1; }
+.ck-card-brand.is-visa { color: #1a1f71; }
+.ck-card-brand.is-mastercard { color: #eb001b; }
+.ck-card-brand.is-amex { color: #2e77bc; }
+.ck-card-brand.is-diners { color: #0079be; }
+
+/* ---------- Pago: tarjeta Yape ---------- */
+.ck-yape {
+    border: 1.5px solid var(--color-bg-gray);
+    border-radius: var(--radius-gen);
+    padding: 1.6em 1.5em;
+    max-width: 360px;
+    margin: .5em auto 0;
+    box-shadow: 0 18px 40px -22px var(--color-bg-shadow-20);
+}
+
+.ck-yape-logo {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.7rem;
+    letter-spacing: -.03em;
+    color: #742284;
+    margin-bottom: 1.1em;
+}
+
+.ck-yape-logo-sm {
+    font-size: 1.15rem;
+    margin: 0;
+    text-align: right;
+}
+
+.ck-yape-phone {
+    letter-spacing: .08em;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.ck-yape-code {
+    display: flex;
+    gap: .5em;
+}
+
+.ck-yape-code input {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0;
+    border: 1.5px solid var(--color-bg-gray);
+    border-radius: var(--radius-input);
+    background: var(--color-bg-white);
+    color: var(--color-bg-dark);
+}
+
+.ck-yape-code input:focus {
+    border-color: #742284;
+    box-shadow: 0 0 0 2px rgba(116, 34, 132, .15);
+    outline: none;
+}
+
+.ck-yape-hint {
+    text-align: center;
+    margin: .8em 0 1.1em;
+}
+
+.ck-yape-btn {
+    width: 100%;
+    border: none;
+    border-radius: var(--radius-btn-special);
+    padding: .85em 1em;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-bg-white);
+    background: #742284;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.ck-yape-btn:hover {
+    background: #5c1a69;
+    color: var(--color-bg-white);
+}
+
+.ck-yape-btn:disabled,
+.ck-yape-btn.is-disabled {
+    background: var(--color-bg-gray);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 /* ---------- Pago: estados ---------- */
 .ck-pay-status {
     text-align: center;

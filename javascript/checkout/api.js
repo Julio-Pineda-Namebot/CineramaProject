@@ -64,21 +64,31 @@ CK.api = (function () {
      * POST /payments -> procesa el pago simulado.
      * Estados: PENDING -> PROCESSING -> SUCCESS | FAILED.
      * `onState` recibe cada transición para que la UI muestre el progreso.
-     * Regla simple de simulación: tarjetas terminadas en "0000" fallan.
+     * Reglas simples de simulación:
+     *   - Tarjeta: las que terminan en "0000" fallan.
+     *   - Yape: el código de aprobación "000000" falla.
      */
     async function processPayment(payment, onState) {
         onState && onState("PENDING");
         await delay(400);
         onState && onState("PROCESSING");
         await delay(1600);
-        const number = (payment.cardNumber || "").replace(/\s/g, "");
-        const declined = number.endsWith("0000");
+
+        let declined, failMsg;
+        if (payment.method === "yape") {
+            declined = (payment.code || "") === "000000";
+            failMsg = "Código de aprobación inválido o expirado.";
+        } else {
+            declined = (payment.cardNumber || "").replace(/\s/g, "").endsWith("0000");
+            failMsg = "Tarjeta rechazada por el emisor.";
+        }
+
         const status = declined ? "FAILED" : "SUCCESS";
         onState && onState(status);
         return {
             status,
             transactionId: status === "SUCCESS" ? "txn_" + Date.now().toString(36) : null,
-            message: declined ? "Tarjeta rechazada por el emisor." : "Pago aprobado."
+            message: declined ? failMsg : "Pago aprobado."
         };
     }
 
